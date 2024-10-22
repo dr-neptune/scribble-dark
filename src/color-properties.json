@@ -1,0 +1,294 @@
+{
+  "manual-racket.css": {
+    "a.RktValDef, a.RktStxDef, a.RktSymDef,\nspan.RktValDef, span.RktStxDef, span.RktSymDef": [
+      "color"
+    ],
+    ".inherited": [
+      "background-color"
+    ],
+    ".RktIn": [
+      "color",
+      "background-color"
+    ],
+    ".RktInBG": [
+      "background-color"
+    ],
+    ".refcolumn .RktInBG": [
+      "background-color"
+    ],
+    ".RktPn": [
+      "color"
+    ],
+    ".RktMeta": [
+      "color"
+    ],
+    ".RktMod": [
+      "color"
+    ],
+    ".RktOpt": [
+      "color"
+    ],
+    ".RktKw": [
+      "color"
+    ],
+    ".RktErr": [
+      "color"
+    ],
+    ".RktVar": [
+      "color"
+    ],
+    ".SVInsetFlow .RktVar": [
+      "color"
+    ],
+    ".RktSym": [
+      "color"
+    ],
+    ".RktValLink, .RktStxLink, .RktModLink": [
+      "color"
+    ],
+    "h2 a.RktStxLink, h3 a.RktStxLink, h4 a.RktStxLink, h5 a.RktStxLink,\nh2 a.RktValLink, h3 a.RktValLink, h4 a.RktValLink, h5 a.RktValLink,\nh2 .RktSym, h3 .RktSym, h4 .RktSym, h5 .RktSym,\nh2 .RktMod, h3 .RktMod, h4 .RktMod, h5 .RktMod,\nh2 .RktVal, h3 .RktVal, h4 .RktVal, h5 .RktVal,\nh2 .RktPn, h3 .RktPn, h4 .RktPn, h5 .RktPn": [
+      "color"
+    ],
+    ".toptoclink .RktStxLink, .toclink .RktStxLink,\n.toptoclink .RktValLink, .toclink .RktValLink,\n.toptoclink .RktModLink, .toclink .RktModLink": [
+      "color"
+    ],
+    ".tocset .RktValLink, .tocset .RktStxLink, .tocset .RktModLink, .tocset .RktSym": [
+      "color"
+    ],
+    ".tocset td a.tocviewselflink .RktValLink,\n.tocset td a.tocviewselflink .RktStxLink,\n.tocset td a.tocviewselflink .RktMod,\n.tocset td a.tocviewselflink .RktSym": [
+      "color"
+    ],
+    ".RktRes": [
+      "color"
+    ],
+    ".RktOut": [
+      "color"
+    ],
+    ".RktCmt": [
+      "color"
+    ],
+    ".RktVal": [
+      "color"
+    ],
+    ".highlighted": [
+      "background-color"
+    ],
+    ".defmodule": [
+      "background-color"
+    ],
+    ".defmodule a": [
+      "color"
+    ],
+    ".defmodule .RktPn": [
+      "color"
+    ],
+    ".Rfiletitle": [
+      "background-color"
+    ],
+    ".Rfilename": [
+      "background-color"
+    ],
+    ".RBackgroundLabelInner": [
+      "color"
+    ]
+  },
+  "scribble.css": {
+    "body": [
+      "color",
+      "background-color"
+    ],
+    ".navsettop, .navsetbottom": [
+      "background-color"
+    ],
+    ".nonavigation": [
+      "color"
+    ],
+    ".searchbox": [
+      "background-color"
+    ],
+    "#contextindicator": [
+      "background-color",
+      "color"
+    ],
+    ".refcolumn": [
+      "background-color"
+    ],
+    ".refcolumnleft": [
+      "background-color"
+    ],
+    ".toclink": [
+      "color"
+    ],
+    ".toptoclink": [
+      "color"
+    ],
+    ".tocview": [
+      "background-color"
+    ],
+    ".tocsub": [
+      "background-color"
+    ],
+    ".tocviewlink": [
+      "color"
+    ],
+    ".tocviewselflink": [
+      "color"
+    ],
+    ".tocviewtoggle": [
+      "color"
+    ],
+    ".boxed": [
+      "background-color"
+    ],
+    ".badlink": [
+      "color"
+    ],
+    ".plainlink": [
+      "color"
+    ],
+    ".techoutside": [
+      "color"
+    ],
+    ".techoutside:hover": [
+      "color"
+    ],
+    ".techinside": [
+      "color"
+    ],
+    ".techinside:hover": [
+      "color"
+    ],
+    ".techoutside:hover>.techinside": [
+      "color"
+    ],
+    ".heading-anchor": [
+      "color"
+    ]
+  },
+  "manual-style.css": {
+    ".button-group > .heading-source": [
+      "color"
+    ],
+    "h3 .stt, h4 .stt, h5 .stt": [
+      "color"
+    ],
+    "h1, h2, h3, h4, h5, h6, h7, h8": [
+      "color"
+    ],
+    "body": [
+      "color",
+      "background-color"
+    ],
+    "a, .toclink, .toptoclink, .tocviewlink, .tocviewselflink, .tocviewtoggle, .plainlink, \n.techinside, .techoutside:hover, .techinside:hover": [
+      "color"
+    ],
+    ".navsettop, .navsetbottom": [
+      "background-color"
+    ],
+    ".navsettop a, .navsetbottom a": [
+      "color"
+    ],
+    ".nonavigation": [
+      "color"
+    ],
+    ".searchbox": [
+      "background-color"
+    ],
+    ".refcolumnleft": [
+      "background-color"
+    ],
+    ".tocset": [
+      "background-color"
+    ],
+    ".tocset td a": [
+      "color"
+    ],
+    ".tocview": [
+      "background-color"
+    ],
+    ".tocset td a.tocviewselflink": [
+      "color"
+    ],
+    ".tocsub": [
+      "background-color"
+    ],
+    ".SVInsetFlow a, .SCodeFlow a": [
+      "color"
+    ],
+    ".boxed": [
+      "background-color"
+    ],
+    ".author > a": [
+      "color"
+    ]
+  },
+  "racket.css": {
+    ".inherited": [
+      "background-color"
+    ],
+    ".RktIn": [
+      "color",
+      "background-color"
+    ],
+    ".RktInBG": [
+      "background-color"
+    ],
+    ".RktPn": [
+      "color"
+    ],
+    ".RktMeta": [
+      "color"
+    ],
+    ".RktMod": [
+      "color"
+    ],
+    ".RktOpt": [
+      "color"
+    ],
+    ".RktKw": [
+      "color"
+    ],
+    ".RktErr": [
+      "color"
+    ],
+    ".RktVar": [
+      "color"
+    ],
+    ".RktSym": [
+      "color"
+    ],
+    ".RktValLink": [
+      "color"
+    ],
+    ".RktModLink": [
+      "color"
+    ],
+    ".RktStxLink": [
+      "color"
+    ],
+    ".RktRes": [
+      "color"
+    ],
+    ".RktOut": [
+      "color"
+    ],
+    ".RktCmt": [
+      "color"
+    ],
+    ".RktVal": [
+      "color"
+    ],
+    ".highlighted": [
+      "background-color"
+    ],
+    ".defmodule": [
+      "background-color"
+    ],
+    ".Rfilename": [
+      "background-color"
+    ],
+    ".RBackgroundLabelInner": [
+      "color"
+    ]
+  }
+}

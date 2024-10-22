@@ -1,0 +1,86 @@
+import React, { useState } from 'react';
+import { ColorPicker, Text, Button, Accordion, Group, Title } from '@mantine/core';
+import colorProperties from '../color-properties.json';
+
+function ColorEditor() {
+  const [colors, setColors] = useState({});
+
+  const handleColorChange = (file, selector, property, newColor) => {
+    setColors((prev) => ({
+      ...prev,
+      [file]: {
+        ...prev[file],
+        [selector]: {
+          ...prev[file]?.[selector],
+          [property]: newColor,
+        },
+      },
+    }));
+  };
+
+  const handleSave = () => {
+    // Serialize the colors state to JSON and download it
+    const dataStr = JSON.stringify(colors, null, 2);
+    const blob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'dark-mode-colors.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  return (
+    <div>
+      <Title order={3} style={{ marginBottom: '1rem' }}>
+        Dark Mode Theme Editor
+      </Title>
+      <Accordion multiple>
+        {Object.entries(colorProperties).map(([file, selectors]) => (
+          <Accordion.Item key={file} label={file}>
+            {Object.entries(selectors).map(([selector, properties]) => (
+              <Accordion key={selector} multiple>
+                <Accordion.Item key={selector} label={selector}>
+                  {properties.map((property) => (
+                    <div key={property} style={{ marginBottom: '1rem' }}>
+                      <Text size="sm" weight={500} style={{ marginBottom: '0.5rem' }}>
+                        {property}
+                      </Text>
+                      <ColorPicker
+                        format="rgba"
+                        value={colors[file]?.[selector]?.[property] || '#000000'}
+                        onChange={(color) =>
+                          handleColorChange(file, selector, property, color)
+                        }
+                        swatches={[
+                          '#000000',
+                          '#ffffff',
+                          '#ff0000',
+                          '#00ff00',
+                          '#0000ff',
+                          '#ffff00',
+                          '#ff00ff',
+                          '#00ffff',
+                        ]}
+                      />
+                      <Text size="xs" color="dimmed" style={{ marginTop: '0.5rem' }}>
+                        Selected Color: {colors[file]?.[selector]?.[property] || 'None'}
+                      </Text>
+                    </div>
+                  ))}
+                </Accordion.Item>
+              </Accordion>
+            ))}
+          </Accordion.Item>
+        ))}
+      </Accordion>
+      <Group position="right" style={{ marginTop: '1rem' }}>
+        <Button onClick={handleSave} color="dark">
+          Save Colors
+        </Button>
+      </Group>
+    </div>
+  );
+}
+
+export default ColorEditor;

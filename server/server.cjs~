@@ -1,0 +1,40 @@
+const express = require('express');
+const cors = require('cors');
+const fs = require('fs');
+const path = require('path');
+
+const app = express();
+const PORT = 5000; // You can choose any available port
+
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// Endpoint to receive dark-mode-colors.json data
+app.post('/save-colors', (req, res) => {
+  const colorsData = req.body;
+
+  if (!colorsData) {
+    return res.status(400).json({ message: 'No data provided.' });
+  }
+
+  // Define the path to save color-properties.json
+  // Adjust the path based on your project structure
+  const filePath = path.resolve(__dirname, '..', 'public', 'dark-mode-colors.json');
+
+  // Write the JSON data to the file
+  fs.writeFile(filePath, JSON.stringify(colorsData, null, 2), 'utf-8', (err) => {
+    if (err) {
+      console.error('Error writing dark-mode-colors.json:', err);
+      return res.status(500).json({ message: 'Failed to save colors.' });
+    }
+
+    console.log('dark-mode-colors.json has been updated successfully.');
+    res.status(200).json({ message: 'Colors saved successfully.' });
+  });
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
