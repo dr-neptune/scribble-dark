@@ -1,44 +1,98 @@
 {
   "manual-style.css": {
     ".tocview": {
-      "background-color": "rgba(94, 90, 90, 1)"
+      "background-color": "rgba(48, 48, 48, 1)"
     },
     "body": {
-      "background-color": "rgba(82, 82, 82, 1)"
-    },
-    ".tocset td a": {
+      "background-color": "rgba(48, 48, 48, 1)",
       "color": "#ffffff"
     },
     ".tocset": {
-      "background-color": "rgba(94, 90, 90, 1)"
+      "background-color": "rgba(48, 48, 48, 1)"
     },
     ".navsettop, .navsetbottom": {
-      "background-color": "rgba(94, 90, 90, 1)"
+      "background-color": "rgba(48, 48, 48, 1)"
+    },
+    "h1, h2, h3, h4, h5, h6, h7, h8": {
+      "color": "#ffffff"
+    },
+    ".SVInsetFlow a, .SCodeFlow a": {
+      "color": "#ffffff"
+    },
+    "a, .toclink, .toptoclink, .tocviewlink, .tocviewselflink, .tocviewtoggle, .plainlink, \n.techinside, .techoutside:hover, .techinside:hover": {
+      "color": "#ffffff"
+    },
+    ".tocset td a": {
+      "color": "#ffffff"
     }
   },
   "scribble.css": {
-    ".tocsub": {
-      "background-color": "rgba(255, 0, 0, 1)"
-    },
     "body": {
-      "background-color": "rgba(255, 150, 150, 1)",
-      "color": "rgba(204, 151, 151, 1)"
+      "color": "#ffffff"
     },
     ".tocview": {
-      "background-color": "rgba(82, 82, 82, 1)"
+      "background-color": "rgba(48, 48, 48, 1)"
+    },
+    ".nonavigation": {
+      "color": "#ffffff"
+    },
+    ".boxed": {
+      "background-color": "rgba(48, 48, 48, 1)"
+    },
+    ".tocviewlink": {
+      "color": "#ffffff"
     }
   },
   "manual-racket.css": {
     "a.RktValDef, a.RktStxDef, a.RktSymDef,\nspan.RktValDef, span.RktStxDef, span.RktSymDef": {
-      "color": "rgba(255, 204, 204, 1)"
+      "color": "rgba(230, 204, 255, 1)"
     },
     ".inherited": {
       "background-color": "rgba(255, 186, 186, 1)"
+    },
+    ".RktValLink, .RktStxLink, .RktModLink": {
+      "color": "#ffffff"
+    },
+    "h2 a.RktStxLink, h3 a.RktStxLink, h4 a.RktStxLink, h5 a.RktStxLink,\nh2 a.RktValLink, h3 a.RktValLink, h4 a.RktValLink, h5 a.RktValLink,\nh2 .RktSym, h3 .RktSym, h4 .RktSym, h5 .RktSym,\nh2 .RktMod, h3 .RktMod, h4 .RktMod, h5 .RktMod,\nh2 .RktVal, h3 .RktVal, h4 .RktVal, h5 .RktVal,\nh2 .RktPn, h3 .RktPn, h4 .RktPn, h5 .RktPn": {
+      "color": "#ffffff"
+    },
+    ".tocset td a.tocviewselflink .RktValLink,\n.tocset td a.tocviewselflink .RktStxLink,\n.tocset td a.tocviewselflink .RktMod,\n.tocset td a.tocviewselflink .RktSym": {
+      "color": "#ffffff"
+    },
+    ".toptoclink .RktStxLink, .toclink .RktStxLink,\n.toptoclink .RktValLink, .toclink .RktValLink,\n.toptoclink .RktModLink, .toclink .RktModLink": {
+      "color": "#ffffff"
+    },
+    ".tocset .RktValLink, .tocset .RktStxLink, .tocset .RktModLink, .tocset .RktSym": {
+      "color": "#ffffff"
+    },
+    ".SVInsetFlow .RktVar": {
+      "color": "rgba(154, 217, 217, 1)"
+    },
+    ".RktVar": {
+      "color": "rgba(181, 181, 255, 1)"
+    },
+    ".RktRes": {
+      "color": "rgba(181, 181, 255, 1)"
+    },
+    ".RktSym": {
+      "color": "rgba(181, 181, 255, 1)"
+    },
+    ".RktOut": {
+      "color": "rgba(214, 155, 232, 1)"
+    },
+    ".defmodule": {
+      "background-color": "rgba(0, 0, 0, 0.79)"
     }
   },
   "racket.css": {
     ".inherited": {
       "background-color": "rgba(252, 197, 197, 1)"
+    },
+    ".RktValLink": {
+      "color": "rgba(181, 181, 255, 1)"
+    },
+    ".RktRes": {
+      "color": "rgba(181, 181, 255, 1)"
     }
   }
 }

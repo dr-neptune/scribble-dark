@@ -334,9 +334,9 @@ a:hover {
     padding: 0.5em;
     padding-left: 0.75em;
     padding-right: 1em;
-    background: hsl(60, 29%, 94%);
-    border: 1px solid #ccb;
-    border-left: 0.4rem solid #ccb;
+    background: rgba(48, 48, 48, 1);
+    border: 1px solid rgba(181, 181, 255, 1);
+    border-left: 0.4rem solid rgba(181, 181, 255, 1);
 }
 
 
@@ -793,22 +793,45 @@ blockquote > blockquote.SVInsetFlow {
 @media (prefers-color-scheme: dark){
 
     .tocview{
-        background-color: rgba(94, 90, 90, 1);
+        background-color: rgba(48, 48, 48, 1);
     }
 
     body{
-        background-color: rgba(82, 82, 82, 1);
+        background-color: rgba(48, 48, 48, 1);
+        color: #ffffff;
+    }
+
+    .tocset{
+        background-color: rgba(48, 48, 48, 1);
+    }
+
+    .navsettop, .navsetbottom{
+        background-color: rgba(48, 48, 48, 1);
+    }
+
+    h1, h2, h3, h4, h5, h6, h7, h8{
+        color: #ffffff;
+    }
+
+    .boxed{
+        background-color: rgba(48, 48, 48, 1);
+        background: rgba(48, 48, 48, 1);
+    }
+
+    .SVInsetFlow a, .SCodeFlow a{
+        color: #ffffff;
     }
 
     .tocset td a{
         color: #ffffff;
     }
 
-    .tocset{
-        background-color: rgba(94, 90, 90, 1);
+    .tocset td a.tocviewselflink{
+        color: rgba(181, 181, 255, 1);
     }
 
-    .navsettop, .navsetbottom{
-        background-color: rgba(94, 90, 90, 1);
+    a, .toclink, .toptoclink, .tocviewlink, .tocviewselflink, .tocviewtoggle, .plainlink,
+.techinside, .techoutside:hover, .techinside:hover{
+        color: #ffffff;
     }
 }

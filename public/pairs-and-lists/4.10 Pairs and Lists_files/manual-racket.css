@@ -69,7 +69,8 @@ span.RktValDef, span.RktStxDef, span.RktSymDef
 
 
 .refcolumn .RktInBG {
-  background-color: white;
+    background-color: rgba(48, 48, 48, 1);
+    background: rgba(48, 48, 48, 1);
 }
 
 .RktRdr {
@@ -329,12 +330,77 @@ tbody > tr:first-child > td > .together {
 
   a.RktValDef, a.RktStxDef, a.RktSymDef,
 span.RktValDef, span.RktStxDef, span.RktSymDef {
-    color: rgba(255, 204, 204, 1);
+    color: rgba(230, 204, 255, 1);
 
   }
 
   .inherited {
     background-color: rgba(255, 186, 186, 1);
+
+  }
+
+  .RktValLink, .RktStxLink, .RktModLink {
+    color: #ffffff;
+
+  }
+
+  h2 a.RktStxLink, h3 a.RktStxLink, h4 a.RktStxLink, h5 a.RktStxLink,
+h2 a.RktValLink, h3 a.RktValLink, h4 a.RktValLink, h5 a.RktValLink,
+h2 .RktSym, h3 .RktSym, h4 .RktSym, h5 .RktSym,
+h2 .RktMod, h3 .RktMod, h4 .RktMod, h5 .RktMod,
+h2 .RktVal, h3 .RktVal, h4 .RktVal, h5 .RktVal,
+h2 .RktPn, h3 .RktPn, h4 .RktPn, h5 .RktPn {
+    color: #ffffff;
+
+  }
+
+  .tocset td a.tocviewselflink .RktValLink,
+.tocset td a.tocviewselflink .RktStxLink,
+.tocset td a.tocviewselflink .RktMod,
+.tocset td a.tocviewselflink .RktSym {
+    color: #ffffff;
+
+  }
+
+  .toptoclink .RktStxLink, .toclink .RktStxLink,
+.toptoclink .RktValLink, .toclink .RktValLink,
+.toptoclink .RktModLink, .toclink .RktModLink {
+    color: #ffffff;
+
+  }
+
+  .tocset .RktValLink, .tocset .RktStxLink, .tocset .RktModLink, .tocset .RktSym {
+    color: #ffffff;
+
+  }
+
+  .SVInsetFlow .RktVar {
+    color: rgba(154, 217, 217, 1);
+
+  }
+
+  .RktVar {
+    color: rgba(181, 181, 255, 1);
+
+  }
+
+  .RktRes {
+    color: rgba(181, 181, 255, 1);
+
+  }
+
+  .RktSym {
+    color: rgba(181, 181, 255, 1);
+
+  }
+
+  .RktOut {
+    color: rgba(214, 155, 232, 1);
+
+  }
+
+  .defmodule {
+    background-color: rgba(0, 0, 0, 0.79);
 
   }
 

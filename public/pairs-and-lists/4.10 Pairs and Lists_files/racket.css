@@ -254,4 +254,10 @@
   .inherited {
     background-color: rgba(252, 197, 197, 1);
   }
+  .RktValLink {
+    color: rgba(181, 181, 255, 1);
+  }
+  .RktRes {
+    color: rgba(181, 181, 255, 1);
+  }
 }

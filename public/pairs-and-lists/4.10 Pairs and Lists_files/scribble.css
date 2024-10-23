@@ -548,14 +548,19 @@ ol ol ol ol { list-style-type: upper-alpha; }
 }
 
 @media (prefers-color-scheme: dark) {
-  .tocsub {
-    background-color: rgba(255, 0, 0, 1);
-  }
   body {
-    background-color: rgba(255, 150, 150, 1);
-    color: rgba(204, 151, 151, 1);
+    color: #ffffff;
   }
   .tocview {
-    background-color: rgba(82, 82, 82, 1);
+    background-color: rgba(48, 48, 48, 1);
+  }
+  .nonavigation {
+    color: #ffffff;
+  }
+  .boxed {
+    background-color: rgba(48, 48, 48, 1);
+  }
+  .tocviewlink {
+    color: #ffffff;
   }
 }
